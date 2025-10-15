@@ -8,7 +8,7 @@ package-lock.json
 # Build outputs
 dist/
 build/
-
+# (removed stray text)
 # Logs
 *.log
 
