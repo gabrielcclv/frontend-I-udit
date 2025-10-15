@@ -1,0 +1,90 @@
+<!-- Archivo: /sow/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Some Outstanding Webs – Análisis de Sitios Premiados</title>
+<link rel="stylesheet" href="../assets/css/sow.css" />
+</head>
+<body>
+  <header>
+    <h1>Some Outstanding Webs</h1>
+    <nav>
+      <ul>
+        <li><a href="#site-awwwards">Awwwards</a></li>
+        <li><a href="#site-webby">Webby Awards</a></li>
+        <li><a href="#site-fwa">FWA</a></li>
+        <li><a href="#site-cssda">CSSDA</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Sección Awwwards -->
+    <section id="site-awwwards">
+      <h2>Flashlights – Análisis del sitio (Awwwards)</h2>
+      <iframe src="https://history.jailhouselawyers.org/" title="Flashlights – Our Roots" width="100%" height="400" loading="lazy"></iframe>
+      <div class="analysis-text">
+        <p><strong>Estructura:</strong> El contenido se organiza en capítulos (CH.1, CH.2, …) dentro de la misma página. Cada capítulo podría estar marcado con un <code>&lt;section&gt;</code> o <code>&lt;article&gt;</code> para mejor semántica. Se usa un menú fijo para navegar por capítulos.</p>
+        <p><strong>Visual:</strong> Paleta minimalista (blanco, negro, rojo) con tipografía legible. Destacan ilustraciones monocromáticas y texto amplio.</p>
+        <p><strong>Interacción:</strong> Efectos de scroll animados (transiciones suaves) y menús que permanecen visibles. La página 404 podría personalizarse con creatividad (p.ej. un pequeño juego).</p>
+        <p><strong>Usabilidad:</strong> Menú claro y fijo facilita la navegación por capítulos. El texto es legible y se adapta a dos columnas en pantallas grandes (CSS multi-columna). Se aconseja garantizar todos los <code>&lt;img&gt;</code> con <code>alt</code> y roles ARIA en navegación.</p>
+        <p><strong>Técnico:</strong> Uso de <code>loading="lazy"</code> en el iframe para rendimiento. Verificar tiempo de carga y Core Web Vitals, optimizando imágenes (WebP) y minificando recursos.</p>
+      </div>
+      
+      <p class="conclusion"><strong>Conclusión:</strong> Un sitio inmersivo y educativo, con fuerte narrativa visual. Destaca por su creatividad, aunque la carga intensiva podría afectar la experiencia en conexiones lentas.</p>
+    </section>
+
+    <!-- Sección Webby -->
+    <section id="site-webby">
+      <h2>Lacoste Heritage – Análisis del sitio (Premio Webby)</h2>
+      <p><strong>Nota:</strong> Este sitio no permite ser incrustado. Puedes visitarlo directamente en: 
+  <a href="https://www.lacoste.com/us/lacoste-heritage.html" target="_blank" rel="noopener noreferrer">
+    lacoste.com/us/lacoste-heritage.html
+  </a>
+</p>
+        <p><strong>Estructura:</strong> One-page con secciones llenas de imágenes de producto y textos cortos. Menú simple, con anclas a secciones internas y enlaces a páginas de categoría.</p>
+        <p><strong>Visual:</strong> Imágenes grandes y audaces alineadas con la identidad de marca. Uso de colores institucionales (verde Lacoste) y tipografía moderna. El diseño “sobrecarga” visualmente de forma intencionada, pero con orden.</p>
+        <p><strong>Interacción:</strong> Animaciones sutiles al hacer hover (texturas brillantes en enlaces del menú) y transiciones suaves. Sin efectos intrusivos, permitiendo que las imágenes destaquen naturalmente.</p>
+        <p><strong>Usabilidad:</strong> Navegación intuitiva: enlaces claros a productos y categorías, y menús acortados. Texto grande y botones llamativos ayudan al usuario. Debe cuidarse la carga perezosa de imágenes para no afectar el tiempo de carga inicial.</p>
+        <p><strong>Técnico:</strong> Sitio optimizado en muchos casos (minimización de CSS/JS). Se debe comprobar que todas las imágenes tengan atributos <code>alt</code> descriptivos. Ya que Awwwards lo elogió por su diseño fluido, conviene confirmar con pruebas en Lighthouse que no sacrifica rendimiento.</p>
+      </div>
+      
+      <p class="conclusion"><strong>Conclusión:</strong> Impactante visualmente y muy alineado con la marca. Excelentes imágenes y UX enfocada al e-commerce. Requiere balancear creatividad con performance, asegurando carga rápida en móvil.</p>
+    </section>
+
+    <!-- Sección FWA -->
+    <section id="site-fwa">
+      <h2>RCA Records – Análisis del sitio (FWA / Awwwards)</h2>
+      <iframe src="https://www.rcarecords.com/" title="RCA Records" width="100%" height="400" loading="lazy"></iframe>
+      <div class="analysis-text">
+        <p><strong>Estructura:</strong> Página inicial con cabecera multimedia (slider de videos musicales) y galería en cuadrícula. Menú desplegable muy extenso con artistas. Usa listas largas de enlaces.</p>
+        <p><strong>Visual:</strong> Estilo energético: fondos oscuros y colores brillantes (blanco, rojo). Imágenes y videos de alta calidad. Según Adobe, “destaca un carrusel de imágenes rápidas que resalta los artistas”.</p>
+        <p><strong>Interacción:</strong> Muy dinámica: slider de portada, carruseles de productos musicales, un original sampler en la página 404. Efectos *hover* en ítems, reproducción automática de videos promocionales.</p>
+        <p><strong>Usabilidad:</strong> El contenido es abrumador pero entretenido. Se mantiene claridad con textos grandes. Sin embargo, la larga lista de artistas podría mejorarse con filtro/búsqueda. Buen uso de botones claros (ej. suscripción), pero cuidado con la navegación vía teclado.</p>
+        <p><strong>Técnico:</strong> Carga intensiva por multimedia. Crítico emplear optimización: `loading="lazy"` en imágenes, compresión de video y sprites. Usar herramientas de medición de rendimiento (Core Web Vitals). Validar HTML/CSS y garantizar textos alternativos a todos los medios.</p>
+      </div>
+      
+      <p class="conclusion"><strong>Conclusión:</strong> Sitio muy innovador y entretenido, con experiencia musical inmersiva. Su punto fuerte es la creatividad audiovisual, aunque su reto es mantener buena velocidad de carga y accesibilidad.</p>
+    </section>
+
+    <!-- Sección CSSDA -->
+    <section id="site-cssda">
+      <h2>Hyer® – Análisis del sitio (CSS Design Awards)</h2>
+      <iframe src="https://www.flyhyer.com/" title="Hyer – Personalised Aviation" width="100%" height="400" loading="lazy"></iframe>
+      <div class="analysis-text">
+        <p><strong>Estructura:</strong> Diseño multi-página con header fijo y navegación clara (Solutions, About, Contact). El contenido se divide en secciones de servicios y testimonios, cada una con <code>&lt;h2&gt;</code> y párrafos explicativos.</p>
+        <p><strong>Visual:</strong> Minimalista y profesional. Blanco de fondo, acentos en azul corporativo. Imágenes de destinos (Barcelona, Ibiza, Cannes, París) con alta resolución. Aplican espacios negativos de manera efectiva (menos es más).</p>
+        <p><strong>Interacción:</strong> Básico pero efectivo: transiciones suaves en menús desplegables y botones con animación leve al *hover*. No hay animaciones complejas, lo cual es coherente con su público corporativo.</p>
+        <p><strong>Usabilidad:</strong> Excelente legibilidad: textos claros y CTA visibles. Formularios simples (subscríbase al boletín) con etiquetas adecuadas. Adecuado etiquetado en imágenes (por ejemplo, “Barcelona (BCN)” en una imagen de fondo). Carga rápida al no sobrecargar de elementos multimedia.</p>
+        <p><strong>Técnico:</strong> Código limpio y semántico (encabezados ordenados y listas). Se recomienda verificar diseño responsive (media queries) para móviles. El CSS se divide en base + específico como sugerido, facilitando mantenibilidad. Al ser sitio sencillo, su rendimiento es óptimo.</p>
+      </div>
+      
+      <p class="conclusion"><strong>Conclusión:</strong> Sitio corporativo ejemplar: diseño limpio y navegación directa. Demuestra que la simplicidad y la coherencia visual pueden generar una experiencia de usuario positiva sin efectos rebuscados. Como mejora avanzada, se podría añadir un pequeño carrusel de testimonios o animación sutil en gráficos sin perder la esencia minimalista.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Web Atelier (UDIT) – Informe de análisis.</p>
+  </footer>
+</body>
+</html>
