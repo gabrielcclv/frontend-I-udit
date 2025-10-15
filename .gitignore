@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node
 node_modules/
 npm-debug.log
@@ -8,7 +9,7 @@ package-lock.json
 # Build outputs
 dist/
 build/
-# (removed stray text)
+
 # Logs
 *.log
 
@@ -18,9 +19,24 @@ Thumbs.db
 
 # Env
 .env
+.env*
+
+# Static site / Jekyll
+_site/
+.nojekyll
+
+# Lockfiles
+*.lock
 
 # VSCode
 .vscode/
 
 # Others
 *.cache
+=======
+.DS_Store
+.env
+.env*
+_site/
+*.lock 
+>>>>>>> 87a352601a7e0657ebf038ea0a6217313fc555e8
